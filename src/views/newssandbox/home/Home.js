@@ -65,7 +65,7 @@ export default function Home(props) {
             xAxis: {
                 data: Object.keys(obj),
                 axisLabel: {
-                    rotate: "45",
+                    rotate: "25",
                     interval: 0
                 }
             },
@@ -208,7 +208,7 @@ export default function Home(props) {
                                 title={username}
                                 description={
                                     <div>
-                                        <b style={{ marginRight: "30px" }}>{region ? region : "全球"}</b>
+                                        <b style={{ marginRight: "30px" }}>{region ? region : "全校"}</b>
                                         {roleName}
                                     </div>
                                 }
@@ -225,7 +225,7 @@ export default function Home(props) {
                 }}></div>
             </Drawer>
             <div id="bar" style={{
-                height: "400px",
+                height: "300px",
                 width: "100%",
                 marginTop: "20px"
             }}></div>

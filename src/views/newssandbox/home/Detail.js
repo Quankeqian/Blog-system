@@ -21,9 +21,7 @@ export default function Detail(props) {
             })
         })
     }, [props.match.params.id])
-    const auditList = ["草稿箱", "审核中", "已通过", "未通过"]
-    const publishList = ["未发布", "待发布", "已上线", "已下线"]
-    const clostList = ["black", "orange", "green", "red"]
+
     const handleStar = () => {
         setnewsInfo({
             ...newsInfo,

@@ -43,12 +43,12 @@ export default function UserList() {
                     }
                 }),
                 {
-                    text: "全球",
-                    value: "全球"
+                    text: "全校",
+                    value: "全校"
                 }
             ],
             onFilter: (value, item) => {
-                if (value === "全球") {
+                if (value === "全校") {
                     return item.region === ""
                 } else {
                     return item.region === value
@@ -58,7 +58,7 @@ export default function UserList() {
             // filterSearch: true,
             // onFilter: (value, record) => record.name.startsWith(value),
             render: (region) => {
-                return <b>{region === "" ? '全球' : region}</b>
+                return <b>{region === "" ? '全校' : region}</b>
             }
         },
         {
