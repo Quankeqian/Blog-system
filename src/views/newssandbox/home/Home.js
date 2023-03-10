@@ -165,7 +165,7 @@ export default function Home(props) {
                             size="small"
                             bordered
                             dataSource={hotList}
-                            renderItem={(item) => <List.Item><a href={`#/news-manage/preview/${item.id}`}>{item.title}</a></List.Item>}
+                            renderItem={(item) => <List.Item><a href={`#/detail/${item.id}`}>{item.title}</a></List.Item>}
                         />
                     </Card>
                 </Col>
@@ -175,7 +175,7 @@ export default function Home(props) {
                             size="small"
                             bordered
                             dataSource={starList}
-                            renderItem={(item) => <List.Item><a href={`#/news-manage/preview/${item.id}`}>{item.title}</a></List.Item>}
+                            renderItem={(item) => <List.Item><a href={`#/detail/${item.id}`}>{item.title}</a></List.Item>}
                         />
                     </Card>
                 </Col>
