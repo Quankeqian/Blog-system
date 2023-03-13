@@ -1,12 +1,12 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { notification } from 'antd'
-const { username } = JSON.parse(localStorage.getItem("token"))
+const { username } = localStorage.getItem("token") ? JSON.parse(localStorage.getItem("token")) : "admin"
 function usePublish(type) {
     const [dataSource, setdataSource] = useState([])
     useEffect(() => {
         axios.get(`/news?author=${username}&publishState=${type}&_expand=category`).then(res => {
-            console.log(res.data)
+            // console.log(res.data)
             setdataSource(res.data)
         })
     }, [])
