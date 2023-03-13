@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+## 一.参考资料
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://jpuri.github.io/react-draft-wysiwyg/#/demo
 
-## Available Scripts
+https://github.com/axios/axios
 
-In the project directory, you can run:
+https://www.isqqw.com/echarts-doc/zh/option.html#title
 
-### `npm start`
+ [https://es6.ruanyifeng.com](https://es6.ruanyifeng.com/) 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ [https://www.bilibili.com/video/BV1fw411d7R5/?spm_id_from=333.337.search-card.all.click&vd_source=5b40b8fbdaeaa1818563ece8e159bdf3](https://www.bilibili.com/video/BV1fw411d7R5/?spm_id_from=333.337.search-card.all.click&vd_source=5b40b8fbdaeaa1818563ece8e159bdf3) 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 二.使用指南
 
-### `npm test`
+### 1.clone项目后下载依赖包
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+npm i
+```
 
-### `npm run build`
+### 2.在db.json目录下开启JsonServer
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+json-server --watch .\db.json --port 5000
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3.启动项目
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm start
+```
 
-### `npm run eject`
+### 4.登录
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+超级管理员       账号：admin    密码：123456
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+其余角色          可在登录超级管理员后的用户列表中查找用户名，密码都是123
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
